@@ -1,0 +1,149 @@
+[
+  {
+    "prefix": "TITULO_GRADO",
+    "description": "Título Grado",
+    "legend": "Adjuntar el Título de Grado",
+    "fileTypes": [
+      "jpg",
+      "pdf",
+      "png",
+      "jpeg"
+    ],
+    "showCondition": [
+      {
+        "field": "TipoBeca",
+        "comparatorValue": "Inicial",
+        "action": "="
+      }
+    ],
+    "requireCondition": [
+      {
+        "field": "TipoBeca",
+        "comparatorValue": "Inicial",
+        "action": "="
+      }
+    ]
+  },
+  {
+    "prefix": "CUIL",
+    "description": "Constancia Cuil",
+    "legend": "Adjuntar Constancia de Cuil",
+    "fileTypes": [
+      "jpg",
+      "pdf",
+      "png",
+      "jpeg"
+    ],
+    "showCondition": [
+      {
+        "field": "nacionalidad",
+        "comparatorValue": "ARGENTINA",
+        "action": "SI"
+      }
+    ],
+    "requireCondition": [
+      {
+        "field": "nacionalidad",
+        "comparatorValue": "ARGENTINA",
+        "action": "="
+      }
+    ]
+  },
+  {
+    "prefix": "OPCIONAL",
+    "description": "Otro",
+    "legend": "Adjuntar otro archivo que considere necesario",
+    "fileTypes": [
+      "jpg",
+      "pdf",
+      "png",
+      "jpeg"
+    ],
+    "showCondition": [
+      {
+        "field": "",
+        "comparatorValue": "",
+        "action": "SI"
+      }
+    ],
+    "requireCondition": [
+      {
+        "field": "",
+        "comparatorValue": "",
+        "action": "NO"
+      }
+    ]
+  },
+  {
+    "prefix": "TITULO_DOCTORADO",
+    "description": "Título Doctorado",
+    "legend": "Adjuntar Título del Doctorado",
+    "fileTypes": [
+      "jpg",
+      "pdf",
+      "png",
+      "jpeg"
+    ],
+    "showCondition": [
+      {
+        "field": "TipoBeca",
+        "comparatorValue": "Superior",
+        "action": "="
+      }
+    ],
+    "requireCondition": [
+      {
+        "field": "TipoBeca",
+        "comparatorValue": "Superior",
+        "action": "="
+      }
+    ]
+  },
+  {
+    "prefix": "PASAPORTE",
+    "description": "Pasaporte",
+    "legend": "Adjuntar fotocopia de pasaporte",
+    "fileTypes": [
+      "jpg",
+      "pdf",
+      "png",
+      "jpeg"
+    ],
+    "showCondition": [
+      {
+        "field": "nacionalidad",
+        "comparatorValue": "ARGENTINA",
+        "action": "SI"
+      }
+    ],
+    "requireCondition": [
+      {
+        "field": "nacionalidad",
+        "comparatorValue": "ARGENTINA",
+        "action": "<>"
+      }
+    ]
+  },
+  {
+    "prefix": "ACTA_DEL_CONCURSO",
+    "description": "Acta del Concurso",
+    "legend": "Adjuntar el Acta del concurso",
+    "fileTypes": [
+      "pdf"
+    ],
+    "showCondition": [
+      {
+        "field": "",
+        "comparatorValue": "",
+        "action": "SI"
+      }
+    ],
+    "requireCondition": [
+      {
+        "field": "",
+        "comparatorValue": "",
+        "action": "SI"
+      }
+    ]
+  }
+]
